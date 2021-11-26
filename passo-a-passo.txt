@@ -1,0 +1,7 @@
+1 - composer require jeroennoten/laravel-adminlte
+2 - php artisan adminlte:install
+app > Providers > AppServiceProvider e insira esses 2 códigos:
+No inicio: use Illuminate\Pagination\Paginator;
+public function boot() {Paginator::useBootstrap();    }
+
+ 
